@@ -1,4 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: black;
-  color: white;
+  background: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  text-align: "center";
+}
+
+.container {
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin: 64px auto;
+  background: #fff;
+  box-shadow: 0 0 27px rgba(0, 0, 0, 0.04);
+}
+
+input [type="checkbox"] {
+  background-color: rgb(192, 125, 125);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+li {
+  display: block;
+  margin: 0;
+}
+
+.input-text,
+.btn {
+  display: block;
+  width: 100%;
+  padding: 8px 4px;
+  outline: none;
+  border: none;
+  border: 3px solid rgb(115, 0, 255);
+}
+.btn {
+  background-color: rgb(115, 0, 255);
+  color: #fff;
+  margin: 4px 0px;
+}
+.input-text {
+  border-color: #fff;
+}
+.input-text:focus,
+.input-text:hover {
+  border-bottom: 3px solid rgb(115, 0, 255);
+}
+hr {
+  margin: 12px auto;
+  border-color: rgba(115, 0, 255, 0.25);
 }

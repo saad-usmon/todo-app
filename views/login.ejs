@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Application</title>
+
+    <link href="/css/main.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sign in</h2>
+      <form action="/login" method="POST">
+        <input
+          type="text"
+          class="input-text"
+          name="username"
+          placeholder="Login"
+        />
+        <input
+        type="password"
+        class="input-text"
+        name="password"
+        placeholder="Password"
+      />
+        <button type="submit" class="btn">Sign in</button>
+        <hr />
+        <h3>or Register here</h3>
+        <button formaction="/removetask" class="btn" type="submit">
+          Sign up
+        </button>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>

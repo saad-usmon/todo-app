@@ -4,29 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ToDo Application</title>
 
-    <link href="/styles.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
       <h2>Simple Todo app</h2>
       <form action="/addtask" method="POST">
-        <input type="text" name="newtask" placeholder="add new task" />
-        <button>Add Task</button>
-        <h2>Added Task</h2>
-        <% for(let i = 0; i < task.length; i++) {%>
-        <li>
-          <input
-            type="checkbox"
-            name="check"
-            value="<%=task[i] %>"
-          /><%=task[i]%>
-        </li>
-        <% } %>
-        <button formaction="/removetask" type="submit">Remove</button>
+        <input
+          type="text"
+          class="input-text"
+          name="newtask"
+          placeholder="add new task"
+        />
+        <button type="submit" class="btn">Add Task</button>
+        <hr />
+        <h3>Added Task</h3>
+        <ul>
+          <% for(let i = 0; i < task.length; i++) {%>
+
+          <li class="items">
+            <input type="checkbox" name="check" value="<%=task[i] %>" />
+            <%=task[i]%>
+          </li>
+          <% } %>
+        </ul>
+        <button formaction="/removetask" class="btn" type="submit">
+          Make Completed
+        </button>
       </form>
-      <h2>Completed task</h2>
+      <hr />
+      <div>
+        <h3>Completed task</h3>
+        <ul>
+          <% for(let i = 0; i < complete.length; i++) {%>
+          <li><input type="checkbox" checked"> <%=complete[i]%></li>
+          <% } %>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
